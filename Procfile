@@ -1,1 +1,1 @@
-web: node insert.js
+web: node web.js
