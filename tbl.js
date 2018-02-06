@@ -1,6 +1,10 @@
-var pg = require('pg');
-pg.connect(process.env.DATABASE_URL, function(err, client) {
-    client.query('CREATE TABLE Messages(msg varchar(255))',function(err, result) {
-        console.log("Table Created")
-    });
+const { Client } = require('pg');
+const client = new Client({
+  connectionString: process.env.DATABASE_URL,
+  ssl: true,
+});
+client.connect();
+client.query('CREATE TABLE Messages(msg varchar(255));', (err, res) => {
+  client.end();
+  console.log("Table Created")
 });
