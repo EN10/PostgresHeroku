@@ -1,4 +1,4 @@
-# Simple Postgres app on Heroku
+# Simple Postgres App on Heroku
 
 #### Create App
 
