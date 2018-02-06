@@ -1,16 +1,18 @@
-Simple Postgres app on Heroku
+# Simple Postgres app on Heroku
+
+#### Create App
 
 Heroku  - New - Create new app  
 Configure Add-ons - Heroku Postgres
 
-#### Install
+## Install
 
     sudo pip install heroku
 
 **Setup Git**
 
     git init
-    git add requirements.txt Procfile package.json insert.html
+    git add requirements.txt Procfile package.json web.js
     git commit -am "init"  
     
 **Setup Heroku**
