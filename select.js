@@ -11,7 +11,7 @@ client.connect();
 app.get('/', function(req, res){
     client.query('SELECT * FROM messages;', (err, data) => {
         for (let row of data.rows) {
-            res.end(row);
+            res.end(JSON.stringify(row));
         }
     client.end();
     });
