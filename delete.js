@@ -6,7 +6,7 @@ const client = new Client({
 
 client.connect();
 
-client.query('DELETE * FROM *;', (err, res) => {
+client.query('DELETE * FROM Messages;', (err, res) => {
   console.log("ALL Deleted")
   client.end();
 });
