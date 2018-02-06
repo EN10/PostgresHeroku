@@ -37,5 +37,6 @@ Table Names:
     AND table_type='BASE TABLE';
 
 #### Ref:
-* [heroku postgresql Node.js](https://devcenter.heroku.com/articles/heroku-postgresql#connecting-in-node-js)
-* [w3 sql](https://www.w3schools.com/sql)
+* [Heroku Postgres Node.js](https://devcenter.heroku.com/articles/heroku-postgresql#connecting-in-node-js)
+* [node-postgres](https://node-postgres.com/features/queries)
+* [w3schools SQL](https://www.w3schools.com/sql)
