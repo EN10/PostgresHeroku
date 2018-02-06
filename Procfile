@@ -1,1 +1,1 @@
-web: node del.js
+web: node delete.js
