@@ -1,1 +1,1 @@
-web: node table.js
+web: node web.js
