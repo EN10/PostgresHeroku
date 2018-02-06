@@ -10,9 +10,7 @@ const client = new Client({
 client.connect();
 app.get('/', function(req, res){
     client.query('SELECT * FROM messages;', (err, data) => {
-        for (let row of data.rows) {
-            res.end(JSON.stringify(row));
-        }
+        res.end(JSON.stringify(data.rows[0]));
     client.end();
     });
 
