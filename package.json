@@ -1,0 +1,11 @@
+{
+    "name": "dbeg",
+    "dependencies": {
+        "express": "latest",
+        "pg": "latest"
+    },
+    "engines": {
+        "node": "latest",
+        "npm": "latest"
+    }
+}

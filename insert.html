@@ -1,0 +1,14 @@
+<h3>Type Message</h3>
+<form action=""> 
+First name: <input type="text" id="txt1" onkeyup="showHint(this.value)">
+</form>
+<script>
+function showHint(str) {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+      document.getElementById("txtHint").innerHTML = this.responseText;
+  };
+  xhttp.open("GET", "gethint.php?q="+str, true);
+  xhttp.send();   
+}
+</script>
