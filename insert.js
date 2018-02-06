@@ -1,10 +1,9 @@
 const { Client } = require('pg');
-const client = new Client({
-  connectionString: process.env.DATABASE_URL,
-  ssl: true,
-});
+const client = new Client()
+
 client.connect();
-client.query('INSERT INTO Messages(msg) VALUES ($1);',['test'], (err, res) => {
-  client.end();
+
+client.query('INSERT INTO Messages(msg) VALUES ($1);',['test2'], (err, res) => {
   console.log("data added")
+  client.end();
 });
