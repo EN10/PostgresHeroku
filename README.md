@@ -40,3 +40,16 @@ Table Names:
 * [Heroku Postgres Node.js](https://devcenter.heroku.com/articles/heroku-postgresql#connecting-in-node-js)
 * [node-postgres](https://node-postgres.com/features/queries)
 * [w3schools SQL](https://www.w3schools.com/sql)
+
+***State:***
+
+Working:
+
+table.js    
+insert.js   
+select.js   
+delete,js   
+
+Work in Prgress:
+
+web.js
