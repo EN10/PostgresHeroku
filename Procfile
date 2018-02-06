@@ -1,1 +1,1 @@
-web: node delete.js
+web: node table.js
