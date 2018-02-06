@@ -1,1 +1,1 @@
-web: node tbl.js
+web: node insert.js
