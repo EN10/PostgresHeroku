@@ -11,17 +11,17 @@ app.get('/', function(req, res){
     
     if (req.query.q !== undefined) {
         client.connect();
-        client.query('INSERT INTO Messages(msg) VALUES ($1);',[req.query.q], (err, res) => {
+        client.query('INSERT INTO Messages(msg) VALUES ($1);',[req.query.q], (err, data) => {
             client.end();
         });
         res.end('row added')
     }
     else {
         client.connect();
-        client.query('SELECT * FROM messages;', (err, res) => {
+        client.query('SELECT * FROM messages;', (err, data) => {
             client.end();
         });
-        res.end(res.rows[0])
+        res.end(data.rows[0])
     }
 });
 
