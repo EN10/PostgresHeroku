@@ -1,3 +1,5 @@
+var express = require("express");
+var app = express();
 const { Client } = require('pg');
 
 const client = new Client({
@@ -6,11 +8,15 @@ const client = new Client({
 });
 
 client.connect();
+app.get('/', function(req, res){
+    client.query('SELECT * FROM messages;', (err, data) => {
+      if (err) throw err;
+      for (let row of data.rows) {
+        res.end(JSON.stringify(row));
+      }
+      client.end();
+    });
 
-client.query('SELECT * FROM messages;', (err, data) => {
-  if (err) throw err;
-  for (let row of data.rows) {
-    console.log(JSON.stringify(row));
-  }
-  client.end();
 });
+
+app.listen(process.env.PORT);
