@@ -4,7 +4,7 @@ const client = new Client({
   ssl: true,
 });
 client.connect();
-client.query('CREATE TABLE Messages(msg varchar(255));', (err, res) => {
+client.query('CREATE TABLE Messages(msg varchar(255) PRIMARY KEY);', (err, res) => {
   client.end();
   console.log("Table Created")
 });
