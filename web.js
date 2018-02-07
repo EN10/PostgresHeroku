@@ -7,13 +7,16 @@ const client = new Client({
   ssl: true,
 });
 
-app.get('/', function(req, res){
-    
 client.connect();
-client.query('SELECT * FROM messages;', (err, data) => {
+
+app.get('/', function(req, res){
+  
+  client.query('INSERT INTO Messages(msg) VALUES ($1);',[req.query.q], (err, res) => {
+    console.log("data added")
+    console.log(err)
     client.end();
-    res.end(data.rows[0])
-    });
+  });
+  
 });
 
 app.listen(process.env.PORT);
