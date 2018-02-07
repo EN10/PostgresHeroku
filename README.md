@@ -22,7 +22,7 @@ Configure Add-ons - Heroku Postgres
 
 **Push to Heroku**
 
-    git push heroku master
+    git push heroku
 
 
 ### Dataclips
