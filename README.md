@@ -40,6 +40,7 @@ Table Names:
 * [Heroku Postgres Node.js](https://devcenter.heroku.com/articles/heroku-postgresql#connecting-in-node-js)
 * [node-postgres](https://node-postgres.com/features/queries)
 * [w3schools SQL](https://www.w3schools.com/sql)
+* [EN10 TopScores](https://github.com/EN10/TopScoresDB/blob/master/web.js)
 
 ***State:***
 
@@ -47,9 +48,9 @@ Working:
 
 table.js    
 insert.js   
-select.js   
-delete,js   
+delete.js   
 
 Work in Prgress:
 
+select.js   
 web.js
